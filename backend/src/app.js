@@ -9,6 +9,8 @@ const port = process.env.PORT || 3300;
 console.log("PORT VALUE: ", process.env.PORT);
 
 
+const frontendPath = path.join(__dirname, "../frontend/build"); // Corrected path
+
 //middle-ware
 app.use(express.json())
 app.use(cors({
@@ -17,10 +19,10 @@ app.use(cors({
 }));
 
 if(process.env.NODE_ENV === 'production'){
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+  app.use(express.static(frontendPath));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"))
+    res.sendFile(path.join(frontendPath, "index.html"))
   })
 }
 
