@@ -23,6 +23,5 @@ This project is a **Code Reviewer** application powered by **Google Gemini 2.0 F
 - Click **Submit** to get AI-generated feedback.
 - Review the suggestions and apply improvements.
 
-![image](https://github.com/user-attachments/assets/72353085-7560-4d1e-9730-3dfdd0c81681)
-
+![Screenshot 2025-02-22 020439](https://github.com/user-attachments/assets/ee723aec-3833-4294-8e83-2c17a1e7ab2f)
 
